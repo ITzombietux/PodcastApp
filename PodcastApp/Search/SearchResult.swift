@@ -19,3 +19,21 @@ class SearchResult {
         self.author = author
     }
 }
+
+extension SearchResult {
+    convenience init(podcastResult: TopPodcastsAPI.PodcastResult) {
+        self.init(
+            artworkUrl: URL(string: podcastResult.artworkUrl100),
+            title: podcastResult.name,
+            author: podcastResult.artistName)
+    }
+}
+
+extension SearchResult {
+    convenience init(podcastResult: PodcastSearchAPI.PodcastSearchResult) {
+        self.init(
+            artworkUrl: URL(string: podcastResult.artworkUrl100),
+            title: podcastResult.collectionName,
+            author: podcastResult.artistName)
+    }
+}

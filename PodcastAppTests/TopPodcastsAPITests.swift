@@ -22,14 +22,11 @@ class TopPodcastsAPITests: XCTestCase {
         client.fetchTopPodcasts { result in
             exp.fulfill()
             switch result {
-            case .success(let data):
-
-                XCTAssert(data.count > 0)
-                let body = String(data: data, encoding: .utf8)!
-                print(body)
-
-
-            case .failure(let error):
+            case .success(let response):
+                XCTAssert(response.feed.results.count == 50)
+                
+            case .failure(let error)
+            :
                 XCTFail(error.localizedDescription)
             }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C7D2B3F331CD19F01C6450D /* Pods_PodcastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD4439BB454777B465F2414 /* Pods_PodcastApp.framework */; };
+		931DDB7C256A8CC100F6CCF7 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DDB7B256A8CC100F6CCF7 /* APIClient.swift */; };
+		931DDB80256A8D6200F6CCF7 /* PodcastSerachAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DDB7F256A8D6200F6CCF7 /* PodcastSerachAPI.swift */; };
 		B5427BB6225E2F1F00DCD07D /* TopPodcastsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5427BB5225E2F1F00DCD07D /* TopPodcastsAPI.swift */; };
 		B5427BBE225E334600DCD07D /* TopPodcastsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5427BBD225E334600DCD07D /* TopPodcastsAPITests.swift */; };
 		B5CF3ECE2231784F0010072D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF3ECD2231784F0010072D /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 		0CD4439BB454777B465F2414 /* Pods_PodcastApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodcastApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		487632002E3842CF2BFECE5A /* Pods-PodcastApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastApp.release.xcconfig"; path = "Target Support Files/Pods-PodcastApp/Pods-PodcastApp.release.xcconfig"; sourceTree = "<group>"; };
 		50F35A57B8782F6195C390F5 /* Pods-PodcastApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastApp.debug.xcconfig"; path = "Target Support Files/Pods-PodcastApp/Pods-PodcastApp.debug.xcconfig"; sourceTree = "<group>"; };
+		931DDB7B256A8CC100F6CCF7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		931DDB7F256A8D6200F6CCF7 /* PodcastSerachAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastSerachAPI.swift; sourceTree = "<group>"; };
 		B5427BB5225E2F1F00DCD07D /* TopPodcastsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastsAPI.swift; sourceTree = "<group>"; };
 		B5427BBB225E334500DCD07D /* PodcastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5427BBD225E334600DCD07D /* TopPodcastsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastsAPITests.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				B5427BB5225E2F1F00DCD07D /* TopPodcastsAPI.swift */,
+				931DDB7B256A8CC100F6CCF7 /* APIClient.swift */,
+				931DDB7F256A8D6200F6CCF7 /* PodcastSerachAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -331,7 +337,9 @@
 				B5CF3EE5223186090010072D /* SearchResult.swift in Sources */,
 				B5427BB6225E2F1F00DCD07D /* TopPodcastsAPI.swift in Sources */,
 				B5CF3EDE223179590010072D /* Theme.swift in Sources */,
+				931DDB80256A8D6200F6CCF7 /* PodcastSerachAPI.swift in Sources */,
 				B5CF3EE7223187670010072D /* SearchResultCell.swift in Sources */,
+				931DDB7C256A8CC100F6CCF7 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

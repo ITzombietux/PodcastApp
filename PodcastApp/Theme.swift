@@ -18,6 +18,12 @@ struct Theme {
         let navBar = UINavigationBar.appearance()
         navBar.barTintColor = Colors.gray4
         navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : Colors.gray0]
+        
+        let searchBarTextFields = UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self])
+        searchBarTextFields.defaultTextAttributes = [
+            .foregroundColor : Colors.gray1,
+            .font : UIFont.boldSystemFont(ofSize: 14)
+        ]
     }
 
     struct Colors {
